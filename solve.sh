@@ -1,11 +1,11 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 function process_folder {
 	echo "processing folder $1"
 	days=$(ls $1)
 	for f in $days
 	do
-		python3 $1/$f/solve.py
+		python $1/$f/solve.py
 	done
 
 }

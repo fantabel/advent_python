@@ -3,7 +3,7 @@ import puzzle
 
 class TestBasic(unittest.TestCase):
     def test_pass(self):
-        data = puzzle.parce(file("input.txt").readlines())
+        data = puzzle.parse(file("input.txt").readlines())
         answer = puzzle.solve(data)
         self.assertEqual(0, answer)
 
